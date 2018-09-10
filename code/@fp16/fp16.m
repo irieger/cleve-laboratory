@@ -1,4 +1,4 @@
-function y = fp16(x)
+function y = fp16(x, flag)
 % FP16.  Constructor for "fp16" 16-bit floating point,
 % also known as "half precision".
 % y = fp16(x) has one field, y.u, a uint16 packed with
@@ -8,7 +8,11 @@ function y = fp16(x)
 
     if nargin == 0
         y.u = uint16([]);
-        y = class(y,'fp16');       
+        y = class(y,'fp16');
+    elseif nargin == 2 && or(strcmpi(flag, 'packed'), strcmpi(flag, 'native')) ...
+                && isa(x, 'uint16')
+        y.u = x;
+        y = class(y, 'fp16');
     elseif isa(x,'fp16')
         y = x;
     else
@@ -24,7 +28,7 @@ function y = fp16(x)
     end
 
     % ---------------------------------------------------------
-    
+
     function u = pack16(x)
     % u = pack16(x) packs single or double x into uint16 u,
     % with bug fixes 12/20/2017.
