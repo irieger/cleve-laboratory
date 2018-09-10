@@ -12,6 +12,10 @@ This repo contains the content of the ~/Documents/MATLAB/Add-Ons/Apps/CleveLabor
 
 Changes based on official release 3.60.0.0 (Uploaded 2018-06-11, downloaded 2018-09-10)
 
-##### 87ad90be3f80e5b15a1b7c42f291ff13ee35df50
+##### 87ad90be - Add packed uint16 passing/readout
 * Add a function to get access to underlying uint16 structure storing the IEEE 754-2008 based binary half float representation allowing binary operations on the data.
 * Add fp16 constructor flag (string 'packed' or 'native' as the second argument besides initial values) to interpret uint16 data as already packed IEEE 754-2008 based binary half floats.
+
+
+##### Optimize conversion function for massive speed increase
+* pack16/unpack16 working directly on matrices instead of using for loops leads to massive speed increase. On my development system speed up was in the range of 100-150 times for converting the peppers sample image to fp16.
