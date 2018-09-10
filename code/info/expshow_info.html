@@ -1,0 +1,94 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Discover the value of e.</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-09-12"><meta name="DC.source" content="expshow_info.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Discover the value of e.</h1><!--introduction--><p>The blue curve is the graph of <span class="MathJax_Preview"><img src="expshow_info_eq15239338251426833486.png" alt="$a^t$"></span><script type="math/tex">a^t</script> for the value of <span class="MathJax_Preview"><img src="expshow_info_eq05508344529756732484.png" alt="$a$"></span><script type="math/tex">a</script> shown in the upper left.  You can drag the blue curve with the mouse and change <span class="MathJax_Preview"><img src="expshow_info_eq05508344529756732484.png" alt="$a$"></span><script type="math/tex">a</script>. The horizontal axis is <span class="MathJax_Preview"><img src="expshow_info_eq12656067504604335951.png" alt="$t$"></span><script type="math/tex">t</script>, which varies between <span class="MathJax_Preview"><img src="expshow_info_eq00202142981986870057.png" alt="$0$"></span><script type="math/tex">0</script> and <span class="MathJax_Preview"><img src="expshow_info_eq17262503285923366262.png" alt="$2$"></span><script type="math/tex">2</script>. When <span class="MathJax_Preview"><img src="expshow_info_eq07931805625463813327.png" alt="$a = 2$"></span><script type="math/tex">a = 2</script> and <span class="MathJax_Preview"><img src="expshow_info_eq01358489034606264043.png" alt="$t = 2$"></span><script type="math/tex">t = 2</script> the blue curve reaches <span class="MathJax_Preview"><img src="expshow_info_eq13268059958363945673.png" alt="$2^2 = 4$"></span><script type="math/tex">2^2 = 4</script>.  When <span class="MathJax_Preview"><img src="expshow_info_eq07165327077797634723.png" alt="$a = 3$"></span><script type="math/tex">a = 3</script> and <span class="MathJax_Preview"><img src="expshow_info_eq01358489034606264043.png" alt="$t = 2$"></span><script type="math/tex">t = 2</script> the curve reaches the upper right hand corner, which is <span class="MathJax_Preview"><img src="expshow_info_eq01380370589088524229.png" alt="$3^2 = 9$"></span><script type="math/tex">3^2 = 9</script>.</p><!--/introduction--><p>The sienna curve is the slope, or derivative, of the blue curve. When <span class="MathJax_Preview"><img src="expshow_info_eq05508344529756732484.png" alt="$a$"></span><script type="math/tex">a</script> is less than a critical value, the derivative of <span class="MathJax_Preview"><img src="expshow_info_eq15239338251426833486.png" alt="$a^t$"></span><script type="math/tex">a^t</script> falls <b>below</b> <span class="MathJax_Preview"><img src="expshow_info_eq15239338251426833486.png" alt="$a^t$"></span><script type="math/tex">a^t</script>, but it still has the same shape.  When <span class="MathJax_Preview"><img src="expshow_info_eq05508344529756732484.png" alt="$a$"></span><script type="math/tex">a</script> is greater than the critical value, the derivative of <span class="MathJax_Preview"><img src="expshow_info_eq15239338251426833486.png" alt="$a^t$"></span><script type="math/tex">a^t</script> is <b>above</b> <span class="MathJax_Preview"><img src="expshow_info_eq15239338251426833486.png" alt="$a^t$"></span><script type="math/tex">a^t</script>, but it still has the same shape.</p><p>Carefully manipulate the curves until they fall on top of each other. The value of <span class="MathJax_Preview"><img src="expshow_info_eq05508344529756732484.png" alt="$a$"></span><script type="math/tex">a</script> is now <span class="MathJax_Preview"><img src="expshow_info_eq12226254761175012236.png" alt="$e$"></span><script type="math/tex">e</script>, the most important constant in mathematics. And, you have a plot of <span class="MathJax_Preview"><img src="expshow_info_eq16588457031942270792.png" alt="$e^t$"></span><script type="math/tex">e^t</script>, the only function in mathematics that is its own derivative.</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Discover the value of e.
+% The blue curve is the graph of $a^t$ for the value of $a$ shown in the 
+% upper left.  You can drag the blue curve with the mouse and change $a$.
+% The horizontal axis is $t$, which varies between $0$ and $2$.
+% When $a = 2$ and $t = 2$ the blue curve reaches $2^2 = 4$.  When
+% $a = 3$ and $t = 2$ the curve reaches the upper right hand corner,
+% which is $3^2 = 9$.
+
+%%
+% The sienna curve is the slope, or derivative, of the blue curve.
+% When $a$ is less than a critical value, the derivative of $a^t$
+% falls *below* $a^t$, but it still has the same shape.  When $a$ is 
+% greater than the critical value, the derivative of $a^t$ is *above* 
+% $a^t$, but it still has the same shape.
+
+%%
+% Carefully manipulate the curves until they fall on top of each other.
+% The value of $a$ is now $e$, the most important constant in mathematics.
+% And, you have a plot of $e^t$, the only function in mathematics that
+% is its own derivative.
+  
+
+##### SOURCE END #####
+--></body></html>
